@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Restaurang Beräknare</title>
+    <link rel="stylesheet" type="text/css" href="restaurangstyle.css">
+  </head>
+  <body>
+    <form class="" action="index.html" method="get">
+      <h4>Vart kommer du ifrån?</h4>
+        <select class="" name="starting_position">
+          <option value="crafoord">Crafood</option><br>
+          <option value="annexet">Annexet</option><br>
+          <option value="sats">Sats</option><br>
+        </select>
+      <h4>Hur hungrig är du?</h4>
+        <select class="" name="hunger_scale">
+          <option value="lite">lite</option><br>
+          <option value="medel">medel</option><br>
+          <option value="mycket">mycket</option><br>
+        </select>
+      <h4>Hur lång tid kan du spendera på att gå?</h4>
+        <input type="text" name="travel_time">
+        <p><i>Enheten räknas automatiskt i minuter</i></p>
+      <div id="map"></div>
+    </form>
+    <script src="restaurangjs.js" type="text/javascript"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjIYFP0w5jFSqhCCoIUCCyartLy3h4tmQ&callback=initMap">
+    </script>
+  </body>
+</html>
